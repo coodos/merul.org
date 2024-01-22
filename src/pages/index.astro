@@ -22,80 +22,70 @@ import SocialPill from "@/components/SocialPill.astro"
   <main class="px-4">
     <SectionContainer class="py-44 pb-32">
       <img
-        class="rounded-full size-12 mb-4"
-        src="/midudev.webp"
-        alt="midudev photo"
+        class="rounded-full size-20 mb-4"
+        src="/me.jpg"
+        alt="merul photo"
       />
       <h1
         class="text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
       >
-        Hey, soy midudev <a
-          href="https://linkedin.com/in/midudev"
+        I'm Merul Dhiman<a
+          href="https://linkedin.com/in/merul"
           target="_blank"
           rel="noopener"
           class="flex justify-center items-center hover:scale-105 transition"
         >
-          <Badge>Disponible para trabajar</Badge>
+          <Badge>Say Hi</Badge>
         </a>
       </h1>
       <h2
         class="text-xl lg:text-2xl text-balance max-w-[700px] text-black dark:text-white"
       >
-        <span>+15 años de experiencia.</span><span
+        <span>7+ years in the game.</span><span
           class="text-yellow-800 dark:text-yellow-200"
-        >
-          Desarrollador Web y Creador de Contenido</span
-        >
-        .<span class="text-red-800 dark:text-red-200">
-          De Barcelona, España</span
+        > Leading Systems Architect</span
+        >.<span class="text-red-800 dark:text-red-200">
+          Director of TangleLabs, CybTEKK</span
         >.
         <span class="text-sky-800 dark:text-sky-200"
-          >Especializado en crear aplicaciones únicas.</span
+          >Best-selling course creator with 150,000+ Students</span
         >
       </h2>
 
       <nav class="flex gap-4 mt-8 flex-wrap">
-        <SocialPill href="https://linkedin.com/in/midudev">
+        <SocialPill href="https://linkedin.com/in/merul">
           <LinkedInIcon class="size-4 md:size-6" />
           LinkedIn
         </SocialPill>
-        <SocialPill href="https://github.com/midudev">
+        <SocialPill href="https://github.com/coodos">
           <GitHubIcon class="size-4 md:size-6" />
           GitHub
         </SocialPill>
-        <SocialPill href="mailto:miduga@gmail.com">
+        <SocialPill href="mailto:mail@merul.org">
           <MailIcon class="size-4 md:size-6" />
-          miduga@gmail.com
+          mail@merul.org
         </SocialPill>
       </nav>
     </SectionContainer>
 
-    <SectionContainer id="experiencia">
+    <SectionContainer id="companies">
       <h2
         class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
       >
         <Briefcase class="size-7" />
-        Experiencia laboral
+        Experience 
       </h2>
       <Experience />
     </SectionContainer>
 
-    <SectionContainer id="proyectos">
-      <h2
-        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
-      >
-        <CodeIcon class="size-7" />
-        Proyectos
-      </h2>
-      <Projects />
-    </SectionContainer>
+    
 
-    <SectionContainer id="sobre-mi">
+    <SectionContainer id="about-me">
       <h2
         class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
       >
         <ProfileCheck class="size-7" />
-        Sobre mi
+      About Me
       </h2>
       <AboutMe />
     </SectionContainer>
