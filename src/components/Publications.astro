@@ -1,0 +1,30 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+const PUBLICATIONS = [
+  {
+    date: "IOTA Foundation · 2022",
+    title: "IRC-27 — IOTA NFT Metadata Standard",
+    description:
+      "Authored the IRC-27 NFT metadata standard for the IOTA ecosystem (TIP proposal under the IOTA Foundation), drafted while at KamiLabs. The spec served as the canonical NFT metadata format on IOTA for multiple years and powered NFTs across the ecosystem. Following the recent IOTA Rebased migration it is no longer the active standard, but it was the reference NFT spec for years.",
+    link: "https://github.com/iotaledger/tips/pull/65",
+  },
+  {
+    date: "Unistar Books · Oct 1, 2016",
+    title: "Astrofacts 101",
+    description:
+      "When I was 11 I was extremely passionate about astronomy and astrophysics but I found the topic to be full of jargon which was difficult for the 11 year old me to understand. I ended up writing a book that captured the main topics of astronomy while keeping it jargon-free for amateurs. P.S. it took me 3 years to find a publisher after I wrote it. ISBN: 9789351137849.",
+    link: "https://www.google.com/search?tbo=p&tbm=bks&q=isbn:9789351137849",
+  },
+]
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    PUBLICATIONS.map((publication) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...publication} />
+      </li>
+    ))
+  }
+</ol>
